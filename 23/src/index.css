@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, 'Noto Sans Armenian', 'Noto Sans Bengali', 'Noto Sans Cherokee', 'Noto Sans Devanagari', 'Noto Sans Ethiopic', 'Noto Sans Georgian', 'Noto Sans Hebrew', 'Noto Sans Kannada', 'Noto Sans Khmer', 'Noto Sans Lao', 'Noto Sans Osmanya', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Thai', sans-serif;
+}
+
+ul,ol,li {
+    list-style-type: none;
+}
+
+input, :active, :hover, :focus {
+    outline: none;
+    outline-offset: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+    --gray_10: #fafbfc;
+    --gray_common: #edeef0;
+    --gray-box-shadow: #dce1e6;
+}
+
+
+body {
+background-color: var(--gray_common);
+font-size: 16px;
+}
+
+.app-content {
+    padding-top: 48px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1076px;
+    padding: 0px;
+    height: 100%;
+}
+
+.header {
+    padding: 0 15px;
+    position: fixed;
+    display: block;
+    width: 100%;
+    user-select: none;
+    border-bottom: 1px solid #dce1e6;;
+    color: #6f7985;
+    background-color: white;
+    height: 3rem;
+}
+
+.header-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.header-content-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-content-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.profile-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-href {
+    display: flex;
+    align-self: center;
+    padding-right: 2rem;
+}
+
+.header-input-wrap {
+    padding-right: 15px;
+}
+
+.header-input-wrap input {
+    background-image: url(/src/images/loop.svg);
+    background-repeat: no-repeat;
+    background-position: 6%;
+    background-color: #edeef0;
+    padding: 10px 0 7px 45px;
+    width: 230px;
+    border-radius: 8px;
+    font-size: 12.5px;
+}
+
+
+
+.header-item-hover:hover {
+    background-color: #f7f8fa;
+    transition: .1s;
+}
+
+.header-item-wrap {
+    color: #6f7985;
+
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header-img-wrap {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-item-img {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.arrow-item {
+    color: #6f7985;
+    padding: 0 7px;
+}
+.header-mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    .header {
+        height: 76px;
+    }
+
+    .header-input-wrap input {
+        display: none;
+    }
+    .header-content {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header-logo-href {
+        display: none;
+    }
+    .header-content-right {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header-mobile-menu{
+        display: flex ;
+    }
+
+    .header-menu-wrap {
+        display: none;
+    }
+    
+    .profile-item-img {
+        height: 52px;
+        width: 52px;
+    }
+
+    .music, .notification, .header-menu-item {
+        height: 42px;
+        width: 42px;
+    }
+    .header-arrow-item {
+        height: 24px;
+        width: 32px;
+    }
+    .header-img-wrap {
+        padding: 0 5px;
+    }
+
+
+}
+
+.navbar {
+    padding-top: 1rem;
+}
+
+.navbar-list {
+    user-select: none;
+    width: 171px;
+}
+
+.list-item-logo-wrap {
+    position: relative;
+    left: -17px;
+    color:  #2a5885;
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+}
+.navbar-list-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 12px 0 8px;
+}
+
+.navbar-left-menu {
+    position: relative;
+    left: -30px;
+    height: 14px;
+    width: 14px;
+    background: url(./images/common.png?6) no-repeat 0-60px;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.navbar-left-menu:hover {
+opacity: .5;
+}
+
+.navbar-list-item:hover {
+
+}
+
+
+.navbar-list-item:hover {
+    background-color: #e7e8ec;
+}
+
+
+.list-item-logo-wrap span {
+    position: relative;
+    color:  black;
+    font-size: 13px;
+    line-height: 30px;
+    padding-left: 8px;
+}
+
+.nav-lvl-border-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-lvl-border {
+    margin: 5px 0;
+    height: 1px;
+    width: 115px;
+    background-color: #2a5885;
+    opacity: .4;
+}
